@@ -3,7 +3,7 @@ const disableds = Array.from(document.querySelectorAll('.disabled'));
 const selectDptos = document.getElementById('departamentos');
 const selectMun = document.getElementById('municipios');
 
-paises.addEventListener('change', (e) => {
+$(document).ready(function () {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://www.datos.gov.co/resource/xdk5-pm3f.json');
 
@@ -60,7 +60,8 @@ paises.addEventListener('change', (e) => {
         });
     });
     xhr.send();
-})
+$('select').formSelect();
+});
 
 var ccpaswd = document.getElementById('ccpaswd');
 var ccpaswdValidate = document.getElementById('ccpaswdValidate');
