@@ -27,45 +27,39 @@
 						<label for="apellido">Apellidos</label>
 					</div>
 					<div class="input-field col s6">
-						<input type="text" id="tipoDocumento">
+						<select id="tipoDocumento">
+							<option value="TI">Tarjeta de identidad</option>
+							<option value="CC">Cedula de ciudadania</option>
+							<option value="passport">Pasaporte</option>
+						</select> 
 						<label for="tipoDocumento">Tipo de documento</label>
 					</div>
 					<div class="input-field col s6">
-						<input type="text" id="Documento">
+						<input type="number" id="Documento">
 						<label for="Documento">Numero de documento</label>
 					</div>
-					<div class="input-field col s4 m4">
-                        <select id="paises">
+					<div class="input-field col s6">
+                        <select id="nacimiento">
                             <option value="" disabled selected>-Escoge una opción-</option>
                             <option value="colombia">Colombia</option>
+                            <option value="españa">España</option>
+                            <option value="canada">Canada</option>
                         </select>
-                         <label for="paises">Lugar de Nacimiento</label>
+                         <label for="nacimiento">Lugar de nacimiento</label>
                     </div>
-                    <div class="input-field col s4 disabled m4" id="departamentosContainer">
-                        <select id="departamentos">
-                            <option value="" disabled selected>-Escoge una opción-</option>
-                        </select>
-                        <label for="departamentos" class="disabled">Departamento</label>
-                    </div>
-                    <div class="input-field col s4 disabled m4" id="municipiosContainer">
-                        <select id="municipios">
-                            <option value="" disabled selected>-Escoge una opción-</option>
-                        </select>
-                        <label for="municipios" class="disabled">Municipio</label>
-                    </div>
-                    <div class="input-field col s4">
+                    <div class="input-field col s6">
 						<input type="date" id="fechanac" maxlength="10">
 						<label for="fechanac">Fecha de Nacimiento</label>
 					</div>
-					<div class="input-field col s8">
+					<div class="input-field col s4">
 						<input type="email" id="email" maxlength="120">
 						<label for="email">Email</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col s4">
 						<input type="text" id="usuario">
 						<label for="usuario">Usuario</label>
 					</div>
-					<div class="input-field col s6">
+					<div class="input-field col s4">
 						<input type="number" maxlength="9" id="telefono">
 						<label for="telefono">Telefono</label>
 					</div>
@@ -78,23 +72,13 @@
 						<label for="password">Escriba su contraseña nuevamente</label>
 					</div>
 					<div class="input-field col s4 m4">
-                        <select id="paisesRes">
+                        <select id="residencia">
                             <option value="" disabled selected>-Escoge una opción-</option>
                             <option value="colombia">Colombia</option>
+                            <option value="españa">España</option>
+                            <option value="canada">Canada</option>
                         </select>
-                         <label for="paisesRes">Lugar de Residencia</label>
-                    </div>
-                    <div class="input-field col s4 disabled m4" id="departamentosContainer">
-                        <select id="departamentosRes">
-                            <option value="" disabled selected>-Escoge una opción-</option>
-                        </select>
-                        <label for="departamentosRes" class="disabled">Departamento</label>
-                    </div>
-                    <div class="input-field col s4 disabled m4" id="municipiosContainer">
-                        <select id="municipios">
-                            <option value="" disabled selected>-Escoge una opción-</option>
-                        </select>
-                        <label for="municipios" class="disabled">Municipio</label>
+                         <label for="residencia">Lugar de Residencia</label>
                     </div>
 					<div class="input-field col s6">
 						<button class="btn-large" type="submit" onclick="return enviarFormulario()">Enviar</button>
